@@ -22,6 +22,7 @@ Selector de id
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -51,6 +52,10 @@ h1 strong{
 	color:#88AABD;
 }
 
+.portfolio{
+	background-color: #fafafa;
+}
+
 .project{
 	/*border-top: 10px solid red;
 	border-right: 10px solid green;
@@ -61,9 +66,14 @@ h1 strong{
 	border-width: 8px;
 	border-style: solid; */
 	border: 1px solid gray;
-	border-radius: 10px;
 	/*border-top-left-radius: 100px;*/
+	border-radius: 10px;
+	
+	/*Con el primer premer margin, hace todos a 10px, luego el de abajo a 15px.*/
+	margin: 10px;
 	margin-bottom: 15px;
+	padding: 20px;
+	background: white;
 }
 
 .project-details{
