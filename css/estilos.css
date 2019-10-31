@@ -43,6 +43,8 @@ h1{
 	/*Decorar el texto
 	text-decoration: dashed;*/
 	color: white;
+	/*Modificar margenes*/
+	margin: 0px 400px 0px 0px;
 }
 
 h1 strong{
@@ -61,6 +63,7 @@ h1 strong{
 	border: 1px solid gray;
 	border-radius: 10px;
 	/*border-top-left-radius: 100px;*/
+	margin-bottom: 15px;
 }
 
 .project-details{
