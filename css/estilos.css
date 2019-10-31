@@ -53,8 +53,18 @@ h1 strong{
 	color:#88AABD;
 }
 
+h2{
+	color: #88AABD;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
 .portfolio{
 	background-color: #fafafa;
+	padding: 20px
 }
 
 .project{
@@ -71,21 +81,44 @@ h1 strong{
 	border-radius: 10px;
 	
 	/*Con el primer premer margin, hace todos a 10px, luego el de abajo a 15px.*/
-	margin: 10px;
+	/*margin: 10px;*/
 	margin-bottom: 15px;
 	padding: 20px;
 	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project-title{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-link{
+	margin: 10px 0px;
+}
+
+.project-imageContainer{
+	width: 300px;
+	height: 250px;
+}
+
+.project-description{
+	font-size: 20px;
+}
+
+.project strong{
+	font-family: 'Fjalla One', serif;
 }
 
 .project-details{
 	/*Con esto expecifico que el div tendra un valor de 500px (La caja)*/
 	width: 500px;
 }
-
-.project-imageContainer{
-	width: 500px;
-}
-
 
 .hero{
 	height: 300px;
