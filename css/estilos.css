@@ -44,8 +44,9 @@ h1{
 	/*Decorar el texto
 	text-decoration: dashed;*/
 	color: white;
-	/*Modificar margenes*/
-	margin: 0px 400px 0px 0px;
+	/*Modificar margenes
+	margin: 0px 400px 0px 0px;*/
+	margin: 0;
 }
 
 h1 strong{
@@ -93,6 +94,8 @@ h1 strong{
 	background-size: 400px 300px;
 	background-repeat: no-repeat;
 	background-position-x: right;
+	display: flex;
+	align-items: center;
 }
 
 ol, ul{
@@ -109,14 +112,15 @@ figure{
 	/*Seleccionar el blackground color*/
 	background-color: #AED1E3;
 	color: white;
-	/*Esto indica el lato del header.
+	/*Esto indica el alto del header.
 	  En esta ocacion fue basado en el
-	  alto de la imagen.*/
+	  alto de la imagen + 20px.*/
 	height: 100px;
 	display: flex;
 	/*Esto sirve para tener los elementos separados
 	  sin ningun tipo de espaciado al inicio o final*/
 	justify-content: space-between;
+	align-items: center;
 }
 
 .menu{
@@ -148,6 +152,29 @@ figure{
 	
 	padding: 0px 10px;
 }
+
+
+
+.footer{
+	color: white;
+	background: #453D3A;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.footer img{
+	vertical-align: middle;
+}
+
+.footer a{
+	color: white;
+}
+
+
+
+
 
 
 
