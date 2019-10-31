@@ -95,16 +95,58 @@ h1 strong{
 	background-position-x: right;
 }
 
+ol, ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure{
+	margin: 0;
+}
+
 .header{
 	/*Seleccionar el blackground color*/
-	background-color: #090A1A;
+	background-color: #AED1E3;
 	color: white;
+	/*Esto indica el lato del header.
+	  En esta ocacion fue basado en el
+	  alto de la imagen.*/
+	height: 100px;
+	display: flex;
+	/*Esto sirve para tener los elementos separados
+	  sin ningun tipo de espaciado al inicio o final*/
+	justify-content: space-between;
+}
+
+.menu{
+	/*Esto permite dar la altura a los ol*/
+	height: inherit;
+} 
+
+.header ol{
+	display: flex;
+	/*Esto obtiene la altura heredada de .menu*/
+	height: inherit;
+}
+
+.header ol li{
+	/*Esto obtiene la altura heredada de .menu ol*/
+	height: inherit;
 }
 
 /*Selecciono los anchor element's del header*/
 .header a{
 	color: white;
 	text-decoration: none;
+	/*Con estos tres, y los anteriores height: inherit
+	  puedo tener todo el alto de los a como "clickeables"*/
+	display: flex;
+	align-items: center;
+	/*Esto obtiene la altura heredada de .menu ol li*/
+	height: inherit;
+	
+	padding: 0px 10px;
 }
 
 
