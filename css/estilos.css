@@ -205,6 +205,72 @@ figure{
 	color: white;
 }
 
+.events{
+	display: flex;
+}
+
+.events-title{
+	margin-left: 20px;
+}
+
+.event{
+	margin: 10px;
+	width: 480px;
+	border-radius: 10px;
+	flex-shrink: 0;
+	/*Cuando un elemento se desborde de las margenes, se va a ocultar*/
+	overflow: hidden;
+	background-color: #FEF7F2;
+}
+
+.event img{
+	width: 480px;
+	height: 250px;
+	object-fit: cover;
+}
+
+
+.event-details{
+	/*Con las siguientes 4 lineas, se usan para superponer el div de
+	  event-details, sobre la figura*/
+	margin: 20px 40px;
+	margin-top: -40px;
+	position: relative;
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+
+.event-description{
+	text-align: left;
+}
+
+.event-link{
+	color: #F58A42;
+	/*No se expecifica el color del borde, debido a que
+	  coge el color del texto "color"*/
+	border: 1px solid;
+	padding: 5px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
