@@ -258,22 +258,83 @@ figure{
 }
 
 
+.contact{
+	background-color: #F58A42;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
 
+.social{
+	
+}
+
+.social-link{
+	/*Con inline-block, se posicionan los elementos "se muestran"*/
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	/*border: 1px solid white;*/
+	/*Para que se visuelicen las imagenes svg, se necesita
+	  indicar su tamano*/
+	background-size: 50px 50px;
+}
+
+.social-link.twitter{
+	background-image: url("../images/twitter.svg");
+}
+
+.social-link.instagram{
+	background-image: url("../images/instagram.svg");
+}
+
+.social-link.facebook{
+	background-image: url("../images/facebook.svg");
+}
+
+.social-link.github{
+	background-image: url("../images/github.svg");
+	
+}
 
 
+.form-email input{
+	border-color: gray;
+	/*Se agrega el solid, para que el color gray sea solido :|*/
+	border-style: solid;
+	border-radius: 5px;
+	/*El pading, es exclusivamente de la imagencita de correo
+	  los ultimos 25 separan la imagen del texto*/
+	padding: 5px 20px 5px 25px;
+	background-image: url("../images/email.svg");
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 5px;
+	
+}
 
 
+.form-email button{
+	/*Con display block, para a la parte inferior.
+	  Debajo del input email*/
+	display: block;
+	margin-top: 5px;
+	background: transparent;
+	color: white;
+	padding: 5px 40px;
+	border-radius: 5px;
+	widows: 100px;
+}
 
 
-
-
-
-
-
-
-
-
+.form-email h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
 
 
