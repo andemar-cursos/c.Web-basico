@@ -1,0 +1,218 @@
+/* CSS Document */
+
+/*Selector de etiqueta {header, section, article, nav
+header{
+	background: pink;
+}
+
+Selector descendente 
+body header div nav ol li a{
+	
+}
+
+Selector de clase
+.link{
+	
+}
+
+Selector de id
+#portafolio{
+	
+}*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Fjalla One', serif;
+	/*El tipo de la fuente. normal = 400*/
+	font-weight: normal;
+	/*font-style: italic;*/
+}
+
+h1{
+	/*Tamano de la fuente*/
+	font-size: 40px;
+	/*Espaciando entre reglones*/
+	line-height: 1.5;
+	/*Espaciado entre caracteres*/
+	letter-spacing: -.2px;
+	/*Como visualizar las letras.
+	text-transform: uppercase;*/
+	/*Decorar el texto
+	text-decoration: dashed;*/
+	color: white;
+	/*Modificar margenes
+	margin: 0px 400px 0px 0px;*/
+	margin: 0;
+}
+
+h1 strong{
+	color:#88AABD;
+}
+
+h2{
+	color: #88AABD;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.portfolio{
+	background-color: #fafafa;
+	padding: 20px
+}
+
+.project{
+	/*border-top: 10px solid red;
+	border-right: 10px solid green;
+	border-left: 10px solid pink;
+	border-bottom: 10px solid orange;
+	----
+	border-bottom-color: white;
+	border-width: 8px;
+	border-style: solid; */
+	border: 1px solid gray;
+	/*border-top-left-radius: 100px;*/
+	border-radius: 10px;
+	
+	/*Con el primer premer margin, hace todos a 10px, luego el de abajo a 15px.*/
+	/*margin: 10px;*/
+	margin-bottom: 15px;
+	padding: 20px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project-title{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-link{
+	margin: 10px 0px;
+}
+
+.project-imageContainer{
+	width: 300px;
+	height: 250px;
+}
+
+.project-description{
+	font-size: 20px;
+}
+
+.project strong{
+	font-family: 'Fjalla One', serif;
+}
+
+.project-details{
+	/*Con esto expecifico que el div tendra un valor de 500px (La caja)*/
+	width: 500px;
+}
+
+.hero{
+	height: 300px;
+	background-image: url("../images/hero.png");
+	background-color: #555751;
+	background-size: 400px 300px;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	display: flex;
+	align-items: center;
+}
+
+ol, ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure{
+	margin: 0;
+}
+
+.header{
+	/*Seleccionar el blackground color*/
+	background-color: #AED1E3;
+	color: white;
+	/*Esto indica el alto del header.
+	  En esta ocacion fue basado en el
+	  alto de la imagen + 20px.*/
+	height: 100px;
+	display: flex;
+	/*Esto sirve para tener los elementos separados
+	  sin ningun tipo de espaciado al inicio o final*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	/*Esto permite dar la altura a los ol*/
+	height: inherit;
+} 
+
+.header ol{
+	display: flex;
+	/*Esto obtiene la altura heredada de .menu*/
+	height: inherit;
+}
+
+.header ol li{
+	/*Esto obtiene la altura heredada de .menu ol*/
+	height: inherit;
+}
+
+/*Selecciono los anchor element's del header*/
+.header a{
+	color: white;
+	text-decoration: none;
+	/*Con estos tres, y los anteriores height: inherit
+	  puedo tener todo el alto de los a como "clickeables"*/
+	display: flex;
+	align-items: center;
+	/*Esto obtiene la altura heredada de .menu ol li*/
+	height: inherit;
+	
+	padding: 0px 10px;
+}
+
+
+
+.footer{
+	color: white;
+	background: #453D3A;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.footer img{
+	vertical-align: middle;
+}
+
+.footer a{
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
