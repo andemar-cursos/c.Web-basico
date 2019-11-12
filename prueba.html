@@ -1,54 +1,68 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Prueba</title>
+	<meta charset="utf-8">
+	<title>Prueba</title>
+	<link rel="icon" type="image/png" href="images/icon sao.png">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 	<header>
-		<nav>
+		<div>
+			<figure>
+				<img src="images/sinon.png" alt="Img principal" width="500px" height="300">
+			</figure>
+			<nav>
 			<ol>
 				<li>
-					<a>Portafolio</a>
+					<a class="link" href="#portafolio">Portafolio</a>
 				</li>
 				<li>
-					<a>Experiencia</a>
+					<a class="link" href="#experiencia">Experiencia</a>
 				</li>
 				<li>
-					<a>Trabajemos juntos</a>
+					<a class="link" href="#sinon">sinon</a>
 				</li>
 			</ol>
 		</nav>
+		</div>
 	</header>
 	<secction>
 		<h1>
 		 Hola! soy <strong>Andemar</strong> e.e<br> Desarrollador <strong>javaScript</strong> <br> con pasión e.e.
 		</h1>
-		
+		<img src="images/hero.png" alt="Sinon">
 	</secction>
-	<section>
-		<h2>Portagolio (Proyectos Destacados)</h2>
+	<section id="portafolio">
+		<h2>Portafolio (Proyectos Destacados)</h2>
 		<article>
 			<h3>Andemar Videos</h3>
 			<h6>React Native / React</h6>
 			<p><small><strong>Fecha:</strong> 01/07/2019</small></p>
 			<p><small><strong>Puedes verlo en:</strong> www.bankanime.com/native</small></p>
-			<p>e.e</p>
+			<img src="images/p1.jpg" alt="p1" width="300" height="250">
 		</article>
 	</section>
-	<section>
+	<section id="experiencia">
 		<h2>Mas sobre mi experiencia</h2>
 		<article>
 			<figure>
-				<img src="" alt="">
+				<img src="images/p2.jpg" alt="p2" width="300" height="250">
 			</figure>
 			<h3>Andemar conf 2019</h3>
 			<p>El evento mas grande e.e</p>
-			<a href="">Ver anime</a>
+			<a href="https://www.youtube.com/watch?v=S5jdgnuMTWk" target="_blank">Ver anime</a>
 		</article>
 	</section>
-	<section>Seccion contacto</section>
+	<section id="sinon">
+		<form action="/suscription/">
+			<h3>¿Fan de sinon?</h3>
+			<label for="sinon">Toca a sinon *-*</label>
+			<input type="text" placeholder="Asada Shinon *-*" id="sinonAsada">
+			<input type="submit" value="Enviar">
+		</form>
+</section>
 	<footer>footer</footer>
 </body>
 </html>
