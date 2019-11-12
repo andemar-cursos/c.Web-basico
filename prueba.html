@@ -1,54 +1,85 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Prueba</title>
+	<meta charset="utf-8">
+	<title>Prueba</title>
+	<link rel="icon" type="image/png" href="images/icon sao.png">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-	<header>
-		<nav>
+	<header class="header">
+		<div>
+			<figure class="logo">
+				<img src="images/sinon.png" alt="Img principal" width="500px" height="300">
+			</figure>
+			<nav class="menu">
 			<ol>
 				<li>
-					<a>Portafolio</a>
+					<a class="link" href="#portafolio">Portafolio</a>
 				</li>
 				<li>
-					<a>Experiencia</a>
+					<a class="link" href="#experiencia">Experiencia</a>
 				</li>
 				<li>
-					<a>Trabajemos juntos</a>
+					<a class="link" href="#sinon">sinon</a>
 				</li>
 			</ol>
 		</nav>
+		</div>
 	</header>
-	<secction>
+	<section class="hero">
 		<h1>
-		 Hola! soy <strong>Andemar</strong> e.e<br> Desarrollador <strong>javaScript</strong> <br> con pasión e.e.
+		 Hola! soy <strong>Andemar</strong> e.e<br> Desarrollador <strong>javaScript</strong> <br> con pasión e.e
 		</h1>
-		
-	</secction>
-	<section>
-		<h2>Portagolio (Proyectos Destacados)</h2>
-		<article>
-			<h3>Andemar Videos</h3>
-			<h6>React Native / React</h6>
-			<p><small><strong>Fecha:</strong> 01/07/2019</small></p>
-			<p><small><strong>Puedes verlo en:</strong> www.bankanime.com/native</small></p>
-			<p>e.e</p>
-		</article>
 	</section>
-	<section>
-		<h2>Mas sobre mi experiencia</h2>
-		<article>
-			<figure>
-				<img src="" alt="">
+	<section class="portfolio" id="portafolio">
+		<h2>Portafolio (Proyectos Destacados)</h2>
+		<article class="project">
+			<div class="project-details">
+				<h3 class="project-title">Andemar Videos</h3>
+				<h6 class="project-course">React Native / React</h6>
+				<p class="project-date"><small><strong>Fecha:</strong> 01/07/2019</small></p>
+				<p class="project-link"><small><strong>Puedes verlo en:</strong> www.bankanime.com/native</small></p>
+				<p class="project-description">Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio</p>
+			</div>
+			<figure class="project-imageContainer">
+				<img class="project-image" src="images/p1.jpg" alt="p1" width="300" height="250">
 			</figure>
-			<h3>Andemar conf 2019</h3>
-			<p>El evento mas grande e.e</p>
-			<a href="">Ver anime</a>
+		</article>
+		<article class="project">
+			<div class="project-details">
+				<h3 class="project-title">Andemar Videos</h3>
+				<h6 class="project-course">React Native / React</h6>
+				<p class="project-date"><small><strong>Fecha:</strong> 01/07/2019</small></p>
+				<p class="project-link"><small><strong>Puedes verlo en:</strong> www.bankanime.com/native</small></p>
+				<p class="project-description">Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio / Descripcion del portafolio</p>
+			</div>
+			<figure class="project-imageContainer">
+				<img class="project-image" src="images/p1.jpg" alt="p1" width="300" height="250">
+			</figure>
 		</article>
 	</section>
-	<section>Seccion contacto</section>
+	<section class="events" id="eventos">
+		<h2>Mas sobre mi experiencia</h2>
+		<article class="event">
+			<figure class="event-imageContainer">
+				<img class="event-image" src="images/p2.jpg" alt="p2" width="300" height="250">
+			</figure>
+			<h3 class="event-title">Andemar conf 2019</h3>
+			<p class="event-description">El evento mas grande e.e</p>
+			<a class="event-link" href="https://www.youtube.com/watch?v=S5jdgnuMTWk" target="_blank">Ver anime</a>
+		</article>
+	</section>
+	<section class="sinon" id="sinon">
+		<form class="form-email" action="/suscription/">
+			<h3>¿Fan de sinon?</h3>
+			<label for="sinon">Toca a sinon *-*</label>
+			<input type="text" placeholder="Asada Shinon *-*" id="sinonAsada">
+			<input type="submit" value="Enviar">
+		</form>
+</section>
 	<footer>footer</footer>
 </body>
 </html>
