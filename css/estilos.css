@@ -1,0 +1,397 @@
+/* CSS Document */
+
+/*Selector de etiqueta {header, section, article, nav
+header{
+	background: pink;
+}
+
+Selector descendente 
+body header div nav ol li a{
+	
+}
+
+Selector de clase
+.link{
+	
+}
+
+Selector de id
+#portafolio{
+	
+}*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Fjalla One', serif;
+	/*El tipo de la fuente. normal = 400*/
+	font-weight: normal;
+	/*font-style: italic;*/
+}
+
+h1{
+	/*Tamano de la fuente*/
+	font-size: 40px;
+	/*Espaciando entre reglones*/
+	line-height: 1.5;
+	/*Espaciado entre caracteres*/
+	letter-spacing: -.2px;
+	/*Como visualizar las letras.
+	text-transform: uppercase;*/
+	/*Decorar el texto
+	text-decoration: dashed;*/
+	color: white;
+	/*Modificar margenes
+	margin: 0px 400px 0px 0px;*/
+	margin: 0;
+}
+
+h1 strong{
+	color:#88AABD;
+}
+
+h2{
+	color: #88AABD;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.portfolio{
+	background-color: #fafafa;
+	padding: 20px
+}
+
+.project{
+	/*border-top: 10px solid red;
+	border-right: 10px solid green;
+	border-left: 10px solid pink;
+	border-bottom: 10px solid orange;
+	----
+	border-bottom-color: white;
+	border-width: 8px;
+	border-style: solid; */
+	border: 1px solid gray;
+	/*border-top-left-radius: 100px;*/
+	border-radius: 10px;
+	
+	/*Con el primer premer margin, hace todos a 10px, luego el de abajo a 15px.*/
+	/*margin: 10px;*/
+	margin-bottom: 15px;
+	padding: 20px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project-title{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-link{
+	margin: 10px 0px;
+}
+
+.project-imageContainer{
+	width: 300px;
+	height: 250px;
+}
+
+.project-description{
+	font-size: 20px;
+}
+
+.project strong{
+	font-family: 'Fjalla One', serif;
+}
+
+.project-details{
+	/*Con esto expecifico que el div tendra un valor de 500px (La caja)*/
+	width: 500px;
+}
+
+.hero{
+	height: 300px;
+	/*background-image: url("../images/hero.png");*/
+	background-color: #555751;
+	/*background-size: 400px 300px;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position-x: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero-image{
+	object-fit: cover;
+}
+
+
+ol, ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure{
+	margin: 0;
+}
+
+.header{
+	/*Seleccionar el blackground color*/
+	background-color: #AED1E3;
+	color: white;
+	/*Esto indica el alto del header.
+	  En esta ocacion fue basado en el
+	  alto de la imagen + 20px.*/
+	height: 100px;
+	display: flex;
+	/*Esto sirve para tener los elementos separados
+	  sin ningun tipo de espaciado al inicio o final*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	/*Esto permite dar la altura a los ol*/
+	height: inherit;
+} 
+
+.header ol{
+	display: flex;
+	/*Esto obtiene la altura heredada de .menu*/
+	height: inherit;
+}
+
+.header ol li{
+	/*Esto obtiene la altura heredada de .menu ol*/
+	height: inherit;
+}
+
+/*Selecciono los anchor element's del header*/
+.header a{
+	color: white;
+	text-decoration: none;
+	/*Con estos tres, y los anteriores height: inherit
+	  puedo tener todo el alto de los a como "clickeables"*/
+	display: flex;
+	align-items: center;
+	/*Esto obtiene la altura heredada de .menu ol li*/
+	height: inherit;
+	
+	padding: 0px 10px;
+}
+
+
+
+.footer{
+	color: white;
+	background: #453D3A;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.footer img{
+	vertical-align: middle;
+}
+
+.footer a{
+	color: white;
+}
+
+.events{
+	display: flex;
+	/*Este atributo lo ereda container*/
+	flex-wrap: wrap;
+}
+
+.events-title{
+	margin-left: 20px;
+}
+
+.event{
+	margin: 10px;
+	width: 480px;
+	border-radius: 10px;
+	flex-shrink: 0;
+	/*Cuando un elemento se desborde de las margenes, se va a ocultar*/
+	overflow: hidden;
+	background-color: #FEF7F2;
+}
+
+.event img{
+	width: 480px;
+	height: 250px;
+	object-fit: cover;
+}
+
+
+.event-details{
+	/*Con las siguientes 4 lineas, se usan para superponer el div de
+	  event-details, sobre la figura*/
+	margin: 20px 40px;
+	margin-top: -40px;
+	position: relative;
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+
+.event-description{
+	text-align: left;
+}
+
+.event-link{
+	color: #F58A42;
+	/*No se expecifica el color del borde, debido a que
+	  coge el color del texto "color"*/
+	border: 1px solid;
+	padding: 5px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+
+.contact{
+	background-color: #F58A42;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.social{
+	
+}
+
+.social-link{
+	/*Con inline-block, se posicionan los elementos "se muestran"*/
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	/*border: 1px solid white;*/
+	/*Para que se visuelicen las imagenes svg, se necesita
+	  indicar su tamano*/
+	background-size: 50px 50px;
+}
+
+.social-link.twitter{
+	background-image: url("../images/twitter.svg");
+}
+
+.social-link.instagram{
+	background-image: url("../images/instagram.svg");
+}
+
+.social-link.facebook{
+	background-image: url("../images/facebook.svg");
+}
+
+.social-link.github{
+	background-image: url("../images/github.svg");
+	
+}
+
+
+.form-email input{
+	border-color: gray;
+	/*Se agrega el solid, para que el color gray sea solido :|*/
+	border-style: solid;
+	border-radius: 5px;
+	/*El pading, es exclusivamente de la imagencita de correo
+	  los ultimos 25 separan la imagen del texto*/
+	padding: 5px 20px 5px 25px;
+	background-image: url("../images/email.svg");
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 5px;
+	
+}
+
+
+.form-email button{
+	/*Con display block, para a la parte inferior.
+	  Debajo del input email*/
+	display: block;
+	margin-top: 5px;
+	background: transparent;
+	color: white;
+	padding: 5px 40px;
+	border-radius: 5px;
+	widows: 100px;
+}
+
+
+.form-email h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.container{
+	/*border: 1px solid red;*/
+	width: 1000px;
+	margin: 0 auto;
+	/*Con las 4 siguientes lineas, hereda del padre "header", para no perder las
+	  caracteristicas establecidas.*/
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	/*Este flex-wrap es eredado de "events"*/
+	flex-wrap: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
