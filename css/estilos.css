@@ -1,0 +1,64 @@
+/* CSS Document */
+
+/*Selector de etiqueta {header, section, article, nav
+header{
+	background: pink;
+}
+
+Selector descendente 
+body header div nav ol li a{
+	
+}
+
+Selector de clase
+.link{
+	
+}
+
+Selector de id
+#portafolio{
+	
+}*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Fjalla One', serif;
+	/*El tipo de la fuente. normal = 400*/
+	font-weight: normal;
+	/*font-style: italic;*/
+}
+
+h1{
+	/*Tamano de la fuente*/
+	font-size: 40px;
+	/*Espaciando entre reglones*/
+	line-height: 1.5;
+	/*Espaciado entre caracteres*/
+	letter-spacing: -.2px;
+	/*Como visualizar las letras.
+	text-transform: uppercase;*/
+	/*Decorar el texto
+	text-decoration: dashed;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
